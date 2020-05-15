@@ -10,17 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var menu: String = "チーズバーガー"
-        textView.text = menu + "は" + priceDecision(menu).toString() + "円です"
+
     }
 
-    fun priceDecision(menu: String): Int {
-        var price: Int = 0
-        if (menu == "チーズバーガー") {
-            price = 125
-        } else if (menu == "ダブルチーズバーガー") {
-            price = 300
-        }
-        return price
-    }
+
 }
