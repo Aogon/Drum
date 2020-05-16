@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         R.raw.tom3,
         R.raw.hihat,
         R.raw.snare,
-        R.raw.bass
+        R.raw.bass,
+        R.raw.kirakira
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -108,6 +109,12 @@ class MainActivity : AppCompatActivity() {
     fun Bass(view : View) {
         if (mSoundID[8] != null) {
             mSoundPool.play(mSoundID[8] as Int , 1.0F, 1.0F, 0, 0, 1.0F)
+        }
+    }
+
+    fun kirakira(view : View) {
+        if (mSoundID[9] != null) {
+            mSoundPool.play(mSoundID[9] as Int , 1.0F, 1.0F, 0, 0, 1.5F)
         }
     }
 
